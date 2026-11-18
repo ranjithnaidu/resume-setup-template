@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page { size: A4; margin: 8mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Calibri', 'Helvetica Neue', Arial, sans-serif; font-size: 9.5pt; color: #1a1a1a; line-height: 1.22; margin: 0; }
+h1.name { text-align: center; font-size: 21pt; font-weight: 700; letter-spacing: 0.5px; color: #17324d; margin: 0 0 2px 0; }
+p.contact { text-align: center; font-size: 9.3pt; color: #444; margin: 0 0 6px 0; }
+h2.section { font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #17324d; border-bottom: 1.3px solid #17324d; padding-bottom: 2px; margin: 7px 0 3px 0; }
+p.company { margin: 5px 0 0 0; font-size: 9.8pt; }
+p.company b { color: #17324d; }
+p.company, table.role { break-after: avoid; page-break-after: avoid; }
+table.role { width: 100%; border-collapse: collapse; margin: 0 0 1px 0; }
+table.role td { padding: 0; vertical-align: top; }
+td.role-left { text-align: left; font-weight: 700; font-size: 10.3pt; }
+td.role-right { text-align: right; font-style: italic; color: #444; font-size: 9.8pt; white-space: nowrap; padding-left: 8px; }
+ul.bullets { margin: 2px 0 5px 0; padding-left: 15px; }
+ul.bullets li { margin-bottom: 1.5px; }
+p.summary { margin: 0 0 2px 0; text-align: justify; }
+.skills p { margin: 1.5px 0; }
+ul.simple { margin: 2px 0 4px 0; padding-left: 15px; }
+ul.simple li { margin-bottom: 1px; }
+p.project-title { margin: 5px 0 0 0; font-size: 9.8pt; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<h1 class="name">[First Last]</h1>
+<p class="contact">[City, State, Country] &nbsp;&middot;&nbsp; [Phone] &nbsp;&middot;&nbsp; [Email] &nbsp;&middot;&nbsp; [linkedin.com/in/handle] &nbsp;&middot;&nbsp; [Work rights]</p>
+
+<h2 class="section">Professional Summary</h2>
+<p class="summary">[3-5 sentences. Who you are (role + years), your most recent role, the 2-3 strengths this job cares about most, backed by concrete evidence. Rewrite per application.]</p>
+
+<h2 class="section">Technical Skills</h2>
+<div class="skills">
+<p><b>[Core stack]:</b> [languages, frameworks]</p>
+<p><b>[Architecture]:</b> [patterns, system design]</p>
+<p><b>[Testing &amp; Quality]:</b> [tools, practices]</p>
+<p><b>[Cloud / Infra / CI/CD]:</b> [tools]</p>
+<p><b>[Observability]:</b> [tools]</p>
+<p><b>[AI &amp; Tooling]:</b> [tools you've actually used]</p>
+</div>
+
+<h2 class="section">Professional Experience</h2>
+
+<p class="company"><b>[Company]</b>, [City, Country]</p>
+<table class="role"><tr><td class="role-left">[Job Title]</td><td class="role-right">[Mon YYYY] &ndash; [Mon YYYY]</td></tr></table>
+<ul class="bullets">
+<li>[Action verb + what you did + scope/scale + outcome. One line or two, never three.]</li>
+<li>[Bullet]</li>
+<li>[Bullet]</li>
+</ul>
+
+<p class="company"><b>[Company]</b>, [City, Country]</p>
+<table class="role"><tr><td class="role-left">[Job Title]</td><td class="role-right">[Mon YYYY] &ndash; [Mon YYYY]</td></tr></table>
+<ul class="bullets">
+<li>[Bullet]</li>
+<li>[Bullet]</li>
+</ul>
+
+<h2 class="section">Earlier Experience</h2>
+<ul class="simple">
+<li>[Title], [Company], [City]: [one-line description] ([YYYY] &ndash; [YYYY])</li>
+</ul>
+
+<h2 class="section">Projects</h2>
+<p class="project-title">[Project name]: [one-line context] ([stack])</p>
+<ul class="bullets">
+<li>[What you built and why it's interesting]</li>
+</ul>
+
+<h2 class="section">Education</h2>
+<ul class="simple">
+<li>[Degree], [Institution], [Location]</li>
+</ul>
+
+</body>
+</html>

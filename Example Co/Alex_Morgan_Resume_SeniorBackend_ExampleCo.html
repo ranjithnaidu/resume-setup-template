@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page { size: A4; margin: 8mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Calibri', 'Helvetica Neue', Arial, sans-serif; font-size: 9.5pt; color: #1a1a1a; line-height: 1.22; margin: 0; }
+h1.name { text-align: center; font-size: 21pt; font-weight: 700; letter-spacing: 0.5px; color: #17324d; margin: 0 0 2px 0; }
+p.contact { text-align: center; font-size: 9.3pt; color: #444; margin: 0 0 6px 0; }
+h2.section { font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #17324d; border-bottom: 1.3px solid #17324d; padding-bottom: 2px; margin: 7px 0 3px 0; }
+p.company { margin: 5px 0 0 0; font-size: 9.8pt; }
+p.company b { color: #17324d; }
+p.company, table.role { break-after: avoid; page-break-after: avoid; }
+table.role { width: 100%; border-collapse: collapse; margin: 0 0 1px 0; }
+table.role td { padding: 0; vertical-align: top; }
+td.role-left { text-align: left; font-weight: 700; font-size: 10.3pt; }
+td.role-right { text-align: right; font-style: italic; color: #444; font-size: 9.8pt; white-space: nowrap; padding-left: 8px; }
+ul.bullets { margin: 2px 0 5px 0; padding-left: 15px; }
+ul.bullets li { margin-bottom: 1.5px; }
+p.summary { margin: 0 0 2px 0; text-align: justify; }
+.skills p { margin: 1.5px 0; }
+ul.simple { margin: 2px 0 4px 0; padding-left: 15px; }
+ul.simple li { margin-bottom: 1px; }
+p.project-title { margin: 5px 0 0 0; font-size: 9.8pt; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<h1 class="name">Alex Morgan</h1>
+<p class="contact">Sydney, NSW, Australia &nbsp;&middot;&nbsp; +61 400 000 000 &nbsp;&middot;&nbsp; alex.morgan@example.com &nbsp;&middot;&nbsp; linkedin.com/in/example &nbsp;&middot;&nbsp; Australian citizen</p>
+
+<h2 class="section">Professional Summary</h2>
+<p class="summary">Backend engineer with 8 years of experience building and operating Python services on AWS, most recently Senior Engineer at a fictional fintech. Designs event-driven systems on Kafka and PostgreSQL, owns reliability from alerting through incident response, and leads technical design reviews. Brings payments-domain experience from building settlement and reconciliation services.</p>
+
+<h2 class="section">Technical Skills</h2>
+<div class="skills">
+<p><b>Backend:</b> Python (FastAPI, Django), Go (familiar), REST, gRPC</p>
+<p><b>Data &amp; Events:</b> PostgreSQL, data modelling, Kafka, outbox pattern, idempotent consumers</p>
+<p><b>Cloud &amp; Infra:</b> AWS (ECS, Lambda, RDS, SQS), Terraform, Docker, GitHub Actions</p>
+<p><b>Reliability:</b> Datadog, PagerDuty, SLOs, incident coordination, post-incident reviews</p>
+</div>
+
+<h2 class="section">Professional Experience</h2>
+
+<p class="company"><b>Fictional Fintech</b>, Sydney, Australia</p>
+<table class="role"><tr><td class="role-left">Senior Software Engineer</td><td class="role-right">Mar 2022 &ndash; Present</td></tr></table>
+<ul class="bullets">
+<li>Designed and built a settlement service in Python and PostgreSQL that reconciles merchant payouts daily, replacing a manual spreadsheet process.</li>
+<li>Moved payment-status updates from polling to Kafka events using the outbox pattern, with idempotent consumers to make retries safe.</li>
+<li>Owned on-call for the payments team: introduced SLO-based alerting in Datadog and ran post-incident reviews that fed fixes back into the backlog.</li>
+<li>Led design reviews for the team and mentored two engineers through their first production services.</li>
+</ul>
+
+<p class="company"><b>Imaginary Retail</b>, Sydney, Australia</p>
+<table class="role"><tr><td class="role-left">Software Engineer</td><td class="role-right">Jan 2018 &ndash; Feb 2022</td></tr></table>
+<ul class="bullets">
+<li>Built order and inventory APIs in Django on AWS, and migrated infrastructure from hand-built EC2 instances to Terraform-managed ECS.</li>
+<li>Introduced contract tests between services, which caught breaking API changes before release.</li>
+</ul>
+
+<h2 class="section">Education</h2>
+<ul class="simple">
+<li>B.Sc. Computer Science, Example University, Sydney</li>
+</ul>
+
+</body>
+</html>

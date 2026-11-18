@@ -1,0 +1,5 @@
+.DS_Store
+# Keep identity documents and payslips out of the repo
+*.jpg
+*.jpeg
+*.heic
