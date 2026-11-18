@@ -35,6 +35,27 @@ the stack lives in your master resume, not in the setup.
   the resume, cover letter and email.
 - Interview booked: *"prep me for the <Company> technical interview on Thursday"*.
 
+## Using GitHub Copilot instead of Claude Code
+
+The same workflow runs in VS Code with Copilot Chat. Copilot picks up
+`.github/copilot-instructions.md` automatically, and that file points it at `CLAUDE.md` and
+the skill files, so both tools follow the same rules.
+
+1. Open the repo in VS Code, open Copilot Chat and switch it to **Agent** mode (it needs to
+   create files and run `scripts/build.sh` in the terminal).
+2. Type `/` and pick a prompt; VS Code asks for each input:
+
+| Prompt | When | You enter |
+|---|---|---|
+| `/setup-profile` | Once, first | Your current resume text; then answer its questions |
+| `/tailor-resume` | Each job | Company, role title, contact (optional), specifics, the full JD |
+| `/interview-prep` | Interview booked | Company, stage, date and interviewers |
+
+`/tailor-resume` shows you a requirement → evidence table and asks about gaps before it
+writes anything. Approve the terminal command when it asks to run the build script.
+
+If the prompts don't appear, check that the VS Code setting `chat.promptFiles` is enabled.
+
 ## Requirements
 
 - [Claude Code](https://claude.com/claude-code)
